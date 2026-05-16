@@ -19,7 +19,7 @@ The app reads its public API endpoint from:
 SEEN/Aura.env
 ```
 
-Do not put `OPENAI_API_KEY` in `SEEN/Aura.env`.
+Do not put `AURA_RESULT_ENGINE_TOKEN` in `SEEN/Aura.env`.
 
 ## Netlify Site
 
@@ -39,8 +39,8 @@ The short API route is:
 Set these Netlify environment variables:
 
 ```txt
-OPENAI_API_KEY=your_openai_api_key
-AURA_OPENAI_MODEL=gpt-4.1-mini
+AURA_RESULT_ENGINE_TOKEN=your_openai_api_key
+AURA_OPENAI_MODEL=gpt-5.4-mini
 AURA_ALLOWED_ORIGINS=https://YOUR_SITE.netlify.app
 ```
 

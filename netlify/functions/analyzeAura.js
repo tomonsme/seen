@@ -19,16 +19,16 @@ exports.handler = async (event) => {
 
   try {
     const body = event.body ? JSON.parse(event.body) : {};
-    const apiKey = process.env.OPENAI_API_KEY;
+    const apiKey = process.env.AURA_RESULT_ENGINE_TOKEN;
 
     if (!apiKey) {
-      return json(500, {error: "missing_openai_api_key"}, headers);
+      return json(500, {error: "missing_result_engine_token"}, headers);
     }
 
     const result = await analyzeAura({
       answers: body.answers,
       apiKey,
-      model: process.env.AURA_OPENAI_MODEL || "gpt-4.1-mini",
+      model: process.env.AURA_OPENAI_MODEL || "gpt-5.4-mini",
     });
 
     return json(200, result, headers);

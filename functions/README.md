@@ -16,13 +16,14 @@ npm install
 Set the OpenAI API key as a Firebase Secret:
 
 ```sh
-firebase functions:secrets:set OPENAI_API_KEY
+firebase functions:secrets:set AURA_RESULT_ENGINE_TOKEN
 ```
 
 Optional local runtime config in `functions/.env`:
 
 ```sh
-AURA_OPENAI_MODEL=gpt-4.1-mini
+AURA_OPENAI_MODEL=gpt-5.4-mini
+AURA_RESULT_ENGINE_TOKEN=your_openai_api_key
 AURA_ALLOWED_ORIGINS=https://your-netlify-site.netlify.app
 ```
 

@@ -6,9 +6,9 @@ const OpenAI = require("openai");
 const {zodTextFormat} = require("openai/helpers/zod");
 const {z} = require("zod");
 
-const openaiApiKey = defineSecret("OPENAI_API_KEY");
+const resultEngineToken = defineSecret("AURA_RESULT_ENGINE_TOKEN");
 const auraOpenAIModel = defineString("AURA_OPENAI_MODEL", {
-  default: "gpt-4.1-mini",
+  default: "gpt-5.4-mini",
 });
 const auraAllowedOrigins = defineString("AURA_ALLOWED_ORIGINS", {
   default: "",
@@ -94,7 +94,7 @@ const systemPrompt = [
 exports.analyzeAura = onRequest(
   {
     region: "us-central1",
-    secrets: [openaiApiKey],
+    secrets: [resultEngineToken],
     timeoutSeconds: 15,
     memory: "256MiB",
     maxInstances: 20,
@@ -114,10 +114,10 @@ exports.analyzeAura = onRequest(
 
     try {
       const answers = normalizeAnswers(req.body && req.body.answers);
-      const apiKey = openaiApiKey.value() || process.env.OPENAI_API_KEY;
+      const apiKey = resultEngineToken.value() || process.env.AURA_RESULT_ENGINE_TOKEN;
 
       if (!apiKey) {
-        res.status(500).json({error: "missing_openai_api_key"});
+        res.status(500).json({error: "missing_result_engine_token"});
         return;
       }
 
@@ -231,7 +231,7 @@ function limitText(value, maxLength) {
 }
 
 function runtimeModel() {
-  return process.env.AURA_OPENAI_MODEL || auraOpenAIModel.value() || "gpt-4.1-mini";
+  return process.env.AURA_OPENAI_MODEL || auraOpenAIModel.value() || "gpt-5.4-mini";
 }
 
 function setBaseHeaders(req, res) {

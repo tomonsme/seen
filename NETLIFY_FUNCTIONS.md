@@ -8,13 +8,13 @@ Blaze. OpenAI usage may still cost money on the OpenAI side.
 Set these in Netlify:
 
 ```txt
-OPENAI_API_KEY=your_openai_api_key
-AURA_OPENAI_MODEL=gpt-4.1-mini
+AURA_RESULT_ENGINE_TOKEN=your_openai_api_key
+AURA_OPENAI_MODEL=gpt-5.4-mini
 AURA_ALLOWED_ORIGINS=https://YOUR_SITE.netlify.app
 ```
 
-For local development, keep `OPENAI_API_KEY` in the root `.env`. Do not put it
-inside `SEEN/Aura.env`.
+For local development, keep `AURA_RESULT_ENGINE_TOKEN` in the root `.env`. Do
+not put it inside `SEEN/Aura.env`.
 
 ## Endpoint
 
