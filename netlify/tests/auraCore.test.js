@@ -2,7 +2,7 @@
 
 const test = require("node:test");
 const assert = require("node:assert/strict");
-const {normalizeAnswers, sanitizeAnalysis} = require("./auraCore");
+const {normalizeAnswers, sanitizeAnalysis} = require("../lib/auraCore");
 
 test("normalizeAnswers fills missing answers and rejects unknown values", () => {
   const answers = normalizeAnswers({

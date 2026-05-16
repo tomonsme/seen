@@ -7,6 +7,8 @@ The repo contains:
 - `SEEN/`: SwiftUI iOS app
 - `site/`: Netlify static marketing site
 - `netlify/functions/`: Netlify AI analysis endpoint
+- `netlify/lib/`: Shared Netlify Function logic
+- `netlify/tests/`: Netlify Function unit tests
 - `functions/`: Firebase Functions prototype, kept for later Firebase migration
 
 ## iOS

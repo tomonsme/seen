@@ -1,6 +1,6 @@
 "use strict";
 
-const {analyzeAura, safeError} = require("./auraCore");
+const {analyzeAura, safeError} = require("../lib/auraCore");
 
 exports.handler = async (event) => {
   const headers = corsHeaders(event.headers && event.headers.origin);

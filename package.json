@@ -3,8 +3,8 @@
   "private": true,
   "description": "AURA marketing site and Netlify Functions API.",
   "scripts": {
-    "test": "node --test netlify/functions/*.test.js",
-    "check": "node --check netlify/functions/analyzeAura.js && node --check netlify/functions/auraCore.js && node --check site/script.js"
+    "test": "node --test netlify/tests/*.test.js",
+    "check": "node --check netlify/functions/analyzeAura.js && node --check netlify/lib/auraCore.js && node --check site/script.js"
   },
   "dependencies": {
     "openai": "^6.38.0",
