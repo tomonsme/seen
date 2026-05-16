@@ -1,0 +1,16 @@
+{
+  "name": "AURA",
+  "short_name": "AURA",
+  "description": "AI social reads for friends, crushes, and group chats.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#08090f",
+  "theme_color": "#08090f",
+  "icons": [
+    {
+      "src": "/assets/app-icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ]
+}

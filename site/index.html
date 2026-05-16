@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AURA - Reveal Your Social Type</title>
+    <meta name="description" content="AURA turns quick social prompts into cute, shareable aura reads for friends, crushes, and group chats.">
+    <meta name="theme-color" content="#08090f">
+    <meta property="og:title" content="AURA">
+    <meta property="og:description" content="Reveal your social type, get a cute roast, and send it to the group chat.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/assets/app-icon.png">
+    <link rel="icon" href="/assets/app-icon.png">
+    <link rel="apple-touch-icon" href="/assets/app-icon.png">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="AURA home">
+        <img src="/assets/app-icon.webp" alt="">
+        <span>AURA</span>
+      </a>
+      <nav>
+        <a href="#try">Try it</a>
+        <a href="#friends">Friends</a>
+        <a href="#types">Types</a>
+      </nav>
+      <a class="nav-cta" href="#waitlist">Get iOS access</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-art" aria-hidden="true">
+          <img class="hero-avatar one" src="/assets/avatar-main-character.webp" alt="">
+          <img class="hero-avatar two" src="/assets/avatar-read-receipt.webp" alt="">
+          <img class="hero-avatar three" src="/assets/avatar-soft-chaos.webp" alt="">
+          <div class="phone-preview">
+            <div class="phone-top">
+              <img src="/assets/app-icon.webp" alt="">
+              <span>Aura Scan</span>
+            </div>
+            <div class="score-ring">
+              <span>84</span>
+              <small>Aura Score</small>
+            </div>
+            <div class="result-chip">Read Receipt Royalty</div>
+            <p>You act unavailable but reply instantly.</p>
+          </div>
+        </div>
+
+        <div class="hero-copy">
+          <p class="eyebrow">Social reads made for screenshots</p>
+          <h1 id="hero-title">AURA</h1>
+          <p class="hero-line">Reveal how you come across, get a cute roast, then send the result to the people who know too much.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#try">Reveal My Aura</a>
+            <a class="button ghost" href="#waitlist">Join iOS waitlist</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-band" aria-label="AURA highlights">
+        <div>
+          <strong>3 taps</strong>
+          <span>to feel it</span>
+        </div>
+        <div>
+          <strong>60 sec</strong>
+          <span>full scan</span>
+        </div>
+        <div>
+          <strong>0 storage</strong>
+          <span>results stay local</span>
+        </div>
+      </section>
+
+      <section class="section try-section" id="try" aria-labelledby="try-title">
+        <div class="section-head centered">
+          <p class="eyebrow">Try the read</p>
+          <h2 id="try-title">Answer 3 prompts. Get a preview.</h2>
+        </div>
+
+        <div class="scan-demo" data-scan-demo>
+          <div class="scan-panel" data-question-panel>
+            <div class="scan-progress">
+              <span data-progress-label>Question 1 of 3</span>
+              <div class="scan-track" aria-hidden="true">
+                <span data-progress-bar style="width: 33%"></span>
+              </div>
+            </div>
+
+            <article class="demo-question is-active" data-question="0">
+              <p class="question-kicker">Texting energy</p>
+              <h3>Do you overthink texts?</h3>
+              <div class="answer-grid">
+                <button type="button" data-answer="0">No</button>
+                <button type="button" data-answer="1">Sometimes</button>
+                <button type="button" data-answer="2">Yes</button>
+              </div>
+            </article>
+
+            <article class="demo-question" data-question="1">
+              <p class="question-kicker">Chill performance</p>
+              <h3>Do you act unbothered?</h3>
+              <div class="answer-grid">
+                <button type="button" data-answer="0">No</button>
+                <button type="button" data-answer="1">Sometimes</button>
+                <button type="button" data-answer="2">Yes</button>
+              </div>
+            </article>
+
+            <article class="demo-question" data-question="2">
+              <p class="question-kicker">Room presence</p>
+              <h3>Do you have main character energy?</h3>
+              <div class="answer-grid">
+                <button type="button" data-answer="0">No</button>
+                <button type="button" data-answer="1">Sometimes</button>
+                <button type="button" data-answer="2">Yes</button>
+              </div>
+            </article>
+          </div>
+
+          <div class="demo-result" data-result-panel aria-live="polite">
+            <p class="share-label">Preview result</p>
+            <img src="/assets/avatar-read-receipt.webp" alt="" data-result-image>
+            <div class="score-pill"><span data-result-score>84</span> Aura Score</div>
+            <h3 data-result-title>Read Receipt Royalty</h3>
+            <p data-result-copy>You act unavailable but reply instantly.</p>
+            <div class="result-actions">
+              <a class="button primary" href="#waitlist">Get the full iOS scan</a>
+              <button type="button" class="button ghost" data-restart>Try again</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section journey" id="friends" aria-labelledby="journey-title">
+        <div class="section-head">
+          <p class="eyebrow">The loop</p>
+          <h2 id="journey-title">The result gets better when friends react.</h2>
+        </div>
+        <div class="journey-grid">
+          <article>
+            <span>01</span>
+            <h3>Reveal</h3>
+            <p>Get a type, score, mascot, and one line worth sending.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Compare</h3>
+            <p>Run crush, bestie, or soft-launch reads without saving results.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Vote</h3>
+            <p>Let friends answer anonymous prompts and turn the read into evidence.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section friend-proof" aria-labelledby="friend-title">
+        <div class="friend-card">
+          <div>
+            <p class="eyebrow">Friend polls</p>
+            <h2 id="friend-title">Not just “who am I?” More like “do they agree?”</h2>
+            <p>Invite friends to vote on who overthinks, who is hard to read, and who has main character energy. The fun is the receipt.</p>
+          </div>
+          <div class="vote-preview" aria-label="Group vote preview">
+            <div>
+              <span>Who overthinks the most?</span>
+              <strong>Mia</strong>
+              <em>62%</em>
+            </div>
+            <div>
+              <span>Who is hardest to read?</span>
+              <strong>Jay</strong>
+              <em>48%</em>
+            </div>
+            <div>
+              <span>Who has main character energy?</span>
+              <strong>Ava</strong>
+              <em>71%</em>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section snapshot" aria-labelledby="snapshot-title">
+        <div class="section-head">
+          <p class="eyebrow">Built for screenshots</p>
+          <h2 id="snapshot-title">One result. Instant group chat fuel.</h2>
+        </div>
+        <div class="share-preview">
+          <img src="/assets/avatar-read-receipt.webp" alt="Read Receipt Royalty mascot">
+          <div>
+            <p class="share-label">Your type</p>
+            <h3>Read Receipt Royalty</h3>
+            <p>You act emotionally unavailable but reply instantly.</p>
+            <div class="mini-metrics" aria-label="Result metrics">
+              <span><b>92</b> Spiral</span>
+              <span><b>81</b> Charm</span>
+              <span><b>74</b> Mystery</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section types" id="types" aria-labelledby="types-title">
+        <div class="section-head">
+          <p class="eyebrow">Pop type system</p>
+          <h2 id="types-title">Cute icons make the result feel collectible.</h2>
+        </div>
+        <div class="type-grid">
+          <article class="type-card">
+            <img src="/assets/avatar-main-character.webp" alt="Main Character Energy mascot">
+            <h3>Main Character Energy</h3>
+            <p>Accidentally cinematic. Definitely aware.</p>
+          </article>
+          <article class="type-card">
+            <img src="/assets/avatar-ice-queen.webp" alt="Ice Queen Softie mascot">
+            <h3>Ice Queen Softie</h3>
+            <p>Cold open, warm ending.</p>
+          </article>
+          <article class="type-card">
+            <img src="/assets/avatar-hard-to-read.webp" alt="Hard To Read mascot">
+            <h3>Hard To Read</h3>
+            <p>Mystery, mixed signals, clean screenshots.</p>
+          </article>
+          <article class="type-card">
+            <img src="/assets/avatar-soft-chaos.webp" alt="Soft Chaos mascot">
+            <h3>Soft Chaos</h3>
+            <p>Sweet intentions. Loud notifications.</p>
+          </article>
+          <article class="type-card">
+            <img src="/assets/avatar-unbothered.webp" alt="Unbothered mascot">
+            <h3>Unbothered</h3>
+            <p>Calm face. Notes app documentary.</p>
+          </article>
+          <article class="type-card">
+            <img src="/assets/avatar-read-receipt.webp" alt="Read Receipt Royalty mascot">
+            <h3>Read Receipt Royalty</h3>
+            <p>Replies fast, pretends otherwise.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section waitlist" id="waitlist" aria-labelledby="waitlist-title">
+        <div>
+          <p class="eyebrow">Coming soon on iOS</p>
+          <h2 id="waitlist-title">Be first to scan.</h2>
+          <p>Join for TestFlight and App Store updates. No spam, no daily emails.</p>
+        </div>
+        <form name="aura-waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
+          <input type="hidden" name="form-name" value="aura-waitlist">
+          <p class="hidden-field">
+            <label>Do not fill this out: <input name="bot-field"></label>
+          </p>
+          <label for="email">Email</label>
+          <div class="form-row">
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+            <button type="submit">Join</button>
+          </div>
+          <p class="form-note">Results are for entertainment. The app does not need saved scan history.</p>
+        </form>
+      </section>
+
+      <section class="section privacy" id="privacy" aria-labelledby="privacy-title">
+        <div class="section-head">
+          <p class="eyebrow">Clear by default</p>
+          <h2 id="privacy-title">Entertainment, not diagnosis.</h2>
+        </div>
+        <div class="privacy-grid">
+          <p>AURA is for social entertainment. Results are not medical, psychological, hiring, school, or financial advice.</p>
+          <p>The app is designed so scan results do not need to be saved. AI requests should run through a server endpoint, never with an API key inside the iOS app.</p>
+        </div>
+        <div class="legal-links">
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms</a>
+        </div>
+      </section>
+    </main>
+
+    <a class="sticky-cta" href="#try">Reveal My Aura</a>
+
+    <footer>
+      <span>AURA</span>
+      <span>Made for playful social reads.</span>
+    </footer>
+  </body>
+</html>

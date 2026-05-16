@@ -1,0 +1,23 @@
+{
+  "name": "aura-functions",
+  "private": true,
+  "description": "Firebase Cloud Functions API for AURA analysis.",
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "node --test",
+    "serve": "firebase emulators:start --only functions",
+    "deploy": "firebase deploy --only functions:aura-api"
+  },
+  "dependencies": {
+    "firebase-functions": "^7.2.5",
+    "openai": "^6.38.0",
+    "zod": "^4.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.1"
+  }
+}
