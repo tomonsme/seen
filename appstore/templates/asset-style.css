@@ -1,0 +1,279 @@
+:root {
+  color-scheme: dark;
+  --bg: #08090f;
+  --ink: #f8f8ff;
+  --muted: #aeb5c7;
+  --cyan: #25e0d2;
+  --pink: #ff5fc8;
+  --lime: #c8ff5a;
+  --panel: rgba(18, 21, 32, 0.92);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+}
+
+.stage {
+  position: relative;
+  width: 1290px;
+  height: 2796px;
+  overflow: hidden;
+  display: grid;
+  align-content: start;
+  justify-items: center;
+  padding: 190px 86px 110px;
+  background:
+    radial-gradient(circle at 20% 12%, rgba(37, 224, 210, 0.28), transparent 420px),
+    radial-gradient(circle at 82% 18%, rgba(255, 95, 200, 0.26), transparent 520px),
+    linear-gradient(180deg, #171a25 0%, #08090f 48%, #071513 100%);
+  color: var(--ink);
+}
+
+.stage::before,
+.stage::after {
+  content: "";
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  border-radius: 110px;
+  background: rgba(255, 255, 255, 0.055);
+  transform: rotate(-9deg);
+}
+
+.stage::before {
+  left: -130px;
+  top: 640px;
+}
+
+.stage::after {
+  right: -120px;
+  bottom: 390px;
+  transform: rotate(8deg);
+}
+
+.copy {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+}
+
+.copy p {
+  margin: 0 0 26px;
+  color: var(--cyan);
+  font-size: 34px;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.copy h1 {
+  margin: 0;
+  font-size: 112px;
+  line-height: 0.95;
+  font-weight: 950;
+  letter-spacing: 0;
+}
+
+.phone {
+  position: relative;
+  z-index: 2;
+  width: 760px;
+  min-height: 1540px;
+  margin-top: 120px;
+  padding: 54px 48px 70px;
+  border: 4px solid rgba(255, 255, 255, 0.16);
+  border-radius: 82px;
+  background: linear-gradient(180deg, rgba(25, 29, 42, 0.96), rgba(9, 11, 18, 0.98));
+  box-shadow: 0 50px 120px rgba(0, 0, 0, 0.52);
+  text-align: center;
+}
+
+.phone-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: var(--muted);
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.phone-top img {
+  width: 78px;
+  height: 78px;
+  border-radius: 22px;
+}
+
+.score-ring {
+  width: 410px;
+  height: 410px;
+  display: grid;
+  place-items: center;
+  margin: 86px auto 20px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at center, #10131c 56%, transparent 57%),
+    conic-gradient(var(--cyan), var(--pink), var(--lime), var(--cyan));
+  font-size: 118px;
+  font-weight: 950;
+}
+
+.mascot {
+  width: 410px;
+  height: 410px;
+  object-fit: contain;
+  margin: 40px auto 18px;
+  filter: drop-shadow(0 28px 42px rgba(0, 0, 0, 0.45));
+}
+
+.phone h2 {
+  margin: 0 auto 22px;
+  max-width: 590px;
+  font-size: 64px;
+  line-height: 0.98;
+  font-weight: 950;
+}
+
+.phone p {
+  margin: 0 auto;
+  max-width: 570px;
+  color: #dfe3ef;
+  font-size: 42px;
+  line-height: 1.22;
+  font-weight: 780;
+}
+
+.ad-square {
+  width: 1080px;
+  height: 1080px;
+  grid-template-columns: 1fr 430px;
+  align-items: center;
+  gap: 30px;
+  padding: 70px;
+}
+
+.ad-landscape {
+  width: 1200px;
+  height: 628px;
+  grid-template-columns: 1fr 380px;
+  align-items: center;
+  gap: 30px;
+  padding: 58px 70px;
+}
+
+.ad-story {
+  width: 1080px;
+  height: 1920px;
+  padding: 130px 70px;
+}
+
+.ad-square .copy,
+.ad-landscape .copy {
+  text-align: left;
+}
+
+.ad-square .copy h1 {
+  font-size: 76px;
+}
+
+.ad-landscape .copy h1 {
+  font-size: 68px;
+}
+
+.ad-story .copy h1 {
+  font-size: 104px;
+}
+
+.ad-square .phone,
+.ad-landscape .phone {
+  width: 420px;
+  min-height: 760px;
+  margin: 0;
+  border-radius: 46px;
+  padding: 28px;
+}
+
+.ad-landscape .phone {
+  width: 360px;
+  min-height: 520px;
+}
+
+.ad-square .phone-top,
+.ad-landscape .phone-top {
+  font-size: 17px;
+  gap: 10px;
+}
+
+.ad-square .phone-top img,
+.ad-landscape .phone-top img {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+}
+
+.ad-square .score-ring {
+  width: 210px;
+  height: 210px;
+  margin: 34px auto 10px;
+  font-size: 58px;
+}
+
+.ad-landscape .score-ring {
+  width: 150px;
+  height: 150px;
+  margin: 24px auto 8px;
+  font-size: 42px;
+}
+
+.ad-square .mascot,
+.ad-landscape .mascot {
+  width: 190px;
+  height: 190px;
+  margin: 16px auto 8px;
+}
+
+.ad-landscape .mascot {
+  width: 120px;
+  height: 120px;
+}
+
+.ad-square .phone h2 {
+  font-size: 34px;
+}
+
+.ad-landscape .phone h2 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.ad-square .phone p {
+  font-size: 22px;
+}
+
+.ad-landscape .phone p {
+  font-size: 17px;
+}
+
+.ad-story .phone {
+  width: 720px;
+  min-height: 1120px;
+  margin-top: 86px;
+}
+
+.ad-story .score-ring {
+  width: 320px;
+  height: 320px;
+  font-size: 92px;
+}
+
+.ad-story .mascot {
+  width: 300px;
+  height: 300px;
+}
+

@@ -4,10 +4,14 @@
   "description": "AURA marketing site and Netlify Functions API.",
   "scripts": {
     "test": "node --test netlify/tests/*.test.js",
-    "check": "node --check netlify/functions/analyzeAura.js && node --check netlify/lib/auraCore.js && node --check site/script.js"
+    "check": "node --check netlify/functions/analyzeAura.js && node --check netlify/lib/auraCore.js && node --check site/script.js && node --check appstore/scripts/generate-assets.mjs",
+    "appstore:assets": "npx playwright install chromium && node appstore/scripts/generate-assets.mjs"
   },
   "dependencies": {
     "openai": "^6.38.0",
     "zod": "^4.2.0"
+  },
+  "devDependencies": {
+    "playwright": "^1.60.0"
   }
 }

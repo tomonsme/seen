@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AURA Asset Template</title>
+    <link rel="stylesheet" href="./asset-style.css">
+  </head>
+  <body>
+    <main id="stage" class="stage screenshot reveal">
+      <section class="copy">
+        <p>AURA</p>
+        <h1>Reveal your social type.</h1>
+      </section>
+      <section class="phone">
+        <div class="phone-top">
+          <img src="../../site/assets/app-icon.webp" alt="">
+          <span>Aura Scan</span>
+        </div>
+        <div class="score-ring">84</div>
+        <img class="mascot" src="../../site/assets/avatar-read-receipt.webp" alt="">
+        <h2>Read Receipt Royalty</h2>
+        <p>You act unavailable but reply instantly.</p>
+      </section>
+    </main>
+    <script>
+      const params = new URLSearchParams(location.search);
+      const type = params.get("type") || "reveal";
+      const mode = params.get("mode") || "screenshot";
+      const stage = document.querySelector("#stage");
+      const content = {
+        reveal: {
+          title: "Reveal your social type.",
+          label: "AURA",
+          phoneTitle: "Read Receipt Royalty",
+          phoneText: "You act unavailable but reply instantly.",
+          image: "avatar-read-receipt.webp",
+          score: "84"
+        },
+        roast: {
+          title: "Get a cute roast worth sharing.",
+          label: "AI SOCIAL READS",
+          phoneTitle: "The Instant Ghost",
+          phoneText: "Fast replies. Slow feelings.",
+          image: "avatar-ice-queen.webp",
+          score: "91"
+        },
+        duo: {
+          title: "Compare your vibe with a crush.",
+          label: "DUO READ",
+          phoneTitle: "Screenshot Chemistry",
+          phoneText: "Too compatible to be casual.",
+          image: "avatar-main-character.webp",
+          score: "88"
+        },
+        vote: {
+          title: "Let friends vote on the pattern.",
+          label: "GROUP CHAT MODE",
+          phoneTitle: "Mia won the lore vote",
+          phoneText: "The group chat has evidence.",
+          image: "avatar-soft-chaos.webp",
+          score: "62%"
+        },
+        share: {
+          title: "Made for story screenshots.",
+          label: "SHARE CARD",
+          phoneTitle: "Soft Chaos",
+          phoneText: "Sweet intentions. Loud notifications.",
+          image: "avatar-unbothered.webp",
+          score: "79"
+        }
+      }[type];
+
+      stage.className = `stage ${mode} ${type}`;
+      document.querySelector(".copy p").textContent = content.label;
+      document.querySelector(".copy h1").textContent = content.title;
+      document.querySelector(".score-ring").textContent = content.score;
+      document.querySelector(".mascot").src = `../../site/assets/${content.image}`;
+      document.querySelector(".phone h2").textContent = content.phoneTitle;
+      document.querySelector(".phone p").textContent = content.phoneText;
+    </script>
+  </body>
+</html>
