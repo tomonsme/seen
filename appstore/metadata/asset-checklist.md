@@ -3,7 +3,7 @@
 ## App Store Connect
 
 - App icon: already in `SEEN/Assets.xcassets/AppIcon.appiconset/AppIcon.png`
-- iPhone screenshots: prepare 3-5 portrait screenshots
+- iPhone screenshots: `1284x2778` portrait screenshots in `appstore/generated/iphone-6-9`
 - App preview video: optional
 - Promotional text: in `en-US.md`
 - Description: in `en-US.md`
@@ -24,4 +24,3 @@
 - `1080x1080` square
 - `1080x1920` story
 - `1200x628` landscape
-

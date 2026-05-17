@@ -6,6 +6,7 @@ import {fileURLToPath} from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const template = `file://${path.join(root, "appstore/templates/asset-page.html")}`;
 const output = path.join(root, "appstore/generated");
+const screenshotSize = {width: 1284, height: 2778};
 
 const screenshots = [
   ["01-reveal-your-social-type.png", "reveal"],
@@ -27,7 +28,7 @@ await mkdir(path.join(output, "ads"), {recursive: true});
 const browser = await chromium.launch();
 
 for (const [filename, type] of screenshots) {
-  const page = await browser.newPage({viewport: {width: 1290, height: 2796}, deviceScaleFactor: 1});
+  const page = await browser.newPage({viewport: screenshotSize, deviceScaleFactor: 1});
   await page.goto(`${template}?mode=screenshot&type=${type}`, {waitUntil: "networkidle"});
   await page.screenshot({path: path.join(output, "iphone-6-9", filename), fullPage: false});
   await page.close();

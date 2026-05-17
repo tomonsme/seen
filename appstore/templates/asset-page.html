@@ -8,9 +8,21 @@
   </head>
   <body>
     <main id="stage" class="stage screenshot reveal">
+      <div class="texture" aria-hidden="true"></div>
       <section class="copy">
-        <p>AURA</p>
+        <p class="label">AURA</p>
         <h1>Reveal your social type.</h1>
+        <p class="subhead">AI social reads for friends, crushes, and group chats.</p>
+        <div class="feature-strip" aria-hidden="true">
+          <span>60 sec scan</span>
+          <span>Cute roast</span>
+          <span>Story card</span>
+        </div>
+      </section>
+      <section class="mascot-cloud" aria-hidden="true">
+        <img src="../../site/assets/avatar-main-character.webp" alt="">
+        <img src="../../site/assets/avatar-soft-chaos.webp" alt="">
+        <img src="../../site/assets/avatar-unbothered.webp" alt="">
       </section>
       <section class="phone">
         <div class="phone-top">
@@ -22,6 +34,10 @@
         <h2>Read Receipt Royalty</h2>
         <p>You act unavailable but reply instantly.</p>
       </section>
+      <section class="cta-bubble" aria-hidden="true">
+        <strong>How do people read you?</strong>
+        <span>Take the scan. Send the result.</span>
+      </section>
     </main>
     <script>
       const params = new URLSearchParams(location.search);
@@ -32,48 +48,62 @@
         reveal: {
           title: "Reveal your social type.",
           label: "AURA",
+          subhead: "AI social reads for friends, crushes, and group chats.",
           phoneTitle: "Read Receipt Royalty",
           phoneText: "You act unavailable but reply instantly.",
           image: "avatar-read-receipt.webp",
-          score: "84"
+          score: "84",
+          chips: ["60 sec scan", "Aura Score", "Story card"]
         },
         roast: {
           title: "Get a cute roast worth sharing.",
           label: "AI SOCIAL READS",
+          subhead: "A quick scan turns your patterns into a screenshot-ready result.",
           phoneTitle: "The Instant Ghost",
           phoneText: "Fast replies. Slow feelings.",
           image: "avatar-ice-queen.webp",
-          score: "91"
+          score: "91",
+          chips: ["Funny", "Fast", "Shareable"]
         },
         duo: {
           title: "Compare your vibe with a crush.",
           label: "DUO READ",
+          subhead: "See chemistry, chaos, and the exact line the chat will quote.",
           phoneTitle: "Screenshot Chemistry",
           phoneText: "Too compatible to be casual.",
           image: "avatar-main-character.webp",
-          score: "88"
+          score: "88",
+          chips: ["Crush mode", "Bestie mode", "Duo score"]
         },
         vote: {
           title: "Let friends vote on the pattern.",
           label: "GROUP CHAT MODE",
+          subhead: "Turn private reads into playful group chat polls.",
           phoneTitle: "Mia won the lore vote",
           phoneText: "The group chat has evidence.",
           image: "avatar-soft-chaos.webp",
-          score: "62%"
+          score: "62%",
+          chips: ["Friend votes", "Anonymous", "Group prompts"]
         },
         share: {
           title: "Made for story screenshots.",
           label: "SHARE CARD",
+          subhead: "Readable, cute results built to post without extra editing.",
           phoneTitle: "Soft Chaos",
           phoneText: "Sweet intentions. Loud notifications.",
           image: "avatar-unbothered.webp",
-          score: "79"
+          score: "79",
+          chips: ["Instagram", "TikTok", "Snapchat"]
         }
       }[type];
 
       stage.className = `stage ${mode} ${type}`;
-      document.querySelector(".copy p").textContent = content.label;
+      document.querySelector(".copy .label").textContent = content.label;
       document.querySelector(".copy h1").textContent = content.title;
+      document.querySelector(".copy .subhead").textContent = content.subhead;
+      document.querySelectorAll(".feature-strip span").forEach((chip, index) => {
+        chip.textContent = content.chips[index];
+      });
       document.querySelector(".score-ring").textContent = content.score;
       document.querySelector(".mascot").src = `../../site/assets/${content.image}`;
       document.querySelector(".phone h2").textContent = content.phoneTitle;
