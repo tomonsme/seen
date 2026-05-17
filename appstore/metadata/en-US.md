@@ -2,7 +2,7 @@
 
 ## App Information
 
-- Name: AURA
+- Name: AURA Social Reads
 - Subtitle: AI social reads for your vibe
 - Category: Entertainment
 - Secondary Category: Lifestyle
@@ -15,11 +15,11 @@ Reveal your social type, get a cute roast, and send the result to the group chat
 
 ## Description
 
-AURA is a fast, funny social read app for friends, crushes, and group chats.
+AURA Social Reads is a fast, funny social read app for friends, crushes, and group chats.
 
 Answer quick prompts, reveal your aura score, unlock a cute social type, and get a shareable one-liner that feels made for screenshots. Compare vibes with a crush or bestie, try daily drops, and let friends vote on the patterns everyone already notices.
 
-AURA is designed for playful entertainment, not serious personality testing. Results are not medical, psychological, hiring, school, or financial advice.
+AURA Social Reads is designed for playful entertainment, not serious personality testing. Results are not medical, psychological, hiring, school, or financial advice.
 
 What you can do:
 
@@ -39,7 +39,7 @@ aura,personality,quiz,friend,compatibility,roast,social,crush,bestie,group chat,
 
 ## What's New
 
-AURA launches with quick aura scans, cute social type avatars, shareable result cards, duo reads, group vote prompts, and daily drops.
+AURA Social Reads launches with quick aura scans, cute social type avatars, shareable result cards, duo reads, group vote prompts, and daily drops.
 
 ## Support URL
 
@@ -56,4 +56,3 @@ https://YOUR_SITE.netlify.app/privacy.html
 ## Copyright
 
 2026 Tomoya Miyake
-

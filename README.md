@@ -1,6 +1,6 @@
-# AURA
+# AURA Social Reads
 
-AURA is an iOS social entertainment app for quick, shareable aura reads.
+AURA Social Reads is an iOS social entertainment app for quick, shareable aura reads.
 
 The repo contains:
 

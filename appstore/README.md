@@ -1,11 +1,12 @@
-# AURA App Store Connect Pack
+# AURA Social Reads App Store Connect Pack
 
 This folder contains App Store Connect draft metadata, review notes, privacy
 notes, and generated image assets.
 
 ## Current App Settings
 
-- App name: AURA
+- App Store name: AURA Social Reads
+- Home screen name: AURA Social
 - Bundle ID: `com.tomoya.aura`
 - Version: `1.0`
 - Build: `1`
@@ -30,4 +31,3 @@ Replace these before final App Store submission:
 - Terms URL: `https://YOUR_SITE.netlify.app/terms.html`
 - Support URL: `https://YOUR_SITE.netlify.app/`
 - Marketing URL: `https://YOUR_SITE.netlify.app/`
-
