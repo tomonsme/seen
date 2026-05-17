@@ -3,7 +3,7 @@
 ## App Information
 
 - Name: AURA Social Reads
-- Subtitle: AI social reads for your vibe
+- Subtitle: Social quizzes for friends
 - Category: Entertainment
 - Secondary Category: Lifestyle
 - Content Rights: Uses original generated mascot artwork and original app UI.
@@ -11,31 +11,34 @@
 
 ## Promotional Text
 
-Reveal your social type, get a cute roast, and send the result to the group chat.
+Take a quick social quiz, unlock your vibe, get a cute roast, and share the result with friends.
 
 ## Description
 
-AURA Social Reads is a fast, funny social read app for friends, crushes, and group chats.
+AURA Social Reads is a fast, funny social quiz app for friends, crushes, besties, and group chats.
 
-Answer quick prompts, reveal your aura score, unlock a cute social type, and get a shareable one-liner that feels made for screenshots. Compare vibes with a crush or bestie, try daily drops, and let friends vote on the patterns everyone already notices.
+Answer quick prompts and reveal how you come across: your Aura Score, social type, cute mascot, hidden pattern, and the one-line roast your friends will want to screenshot.
+
+Use it before a night out, after a confusing text, or when the group chat needs something funny to send around. Compare your vibe with a crush or bestie, try daily drops, and run playful group prompts on the same phone.
+
+Why people use AURA Social Reads:
+
+- Quick social quizzes that take about a minute
+- AI-style aura reads with a score, type, roast, and hidden pattern
+- Cute social type avatars made for screenshots
+- Duo reads for friends, crushes, and besties
+- Group vote prompts for main character energy, overthinking, mixed signals, and more
+- Share cards for Instagram Stories, TikTok, Snapchat, and group chats
+- No account required for the core scan flow
+- No saved scan history needed
 
 AURA Social Reads is designed for playful entertainment, not serious personality testing. Results are not medical, psychological, hiring, school, or financial advice.
 
-What you can do:
-
-- Take a quick Aura Scan
-- Reveal your Aura Score and social type
-- Get a cute roast and hidden pattern
-- Compare compatibility with a friend, crush, or bestie
-- Run group vote prompts on the same phone
-- Generate shareable cards for social stories
-- Use the app without saved scan history
-
-Fast. Funny. Shareable.
+Fast. Cute. Shareable.
 
 ## Keywords
 
-aura,personality,quiz,friend,compatibility,roast,social,crush,bestie,group chat,gen z
+aura,personality,quiz,compatibility,roast,friends,crush,bestie,vibe,social,chat,teen
 
 ## What's New
 
